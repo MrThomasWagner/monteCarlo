@@ -8,7 +8,7 @@ Have used this to approxiamate future required database capacities.
 
 For example, say you are tracking clicks on a site to generate a heatmap (what parts of my site are users actually USING).  You store all the clicks from the last 2 weeks in a database which are used to generate the heatmap.  A single entry contains the coordinates of the click, on which page, on which site.  If you are actively tracking clicks for 2000 sites and want to add the feature to another 1000 sites, what is a fair estimation of the newly required database capacity?
 
-At first it seems the linear approach might work, simply expect 50% more usage.  But, not all sites are as popular as others and some sites store 20K clicks for the last two weeks and others store only 1K (there is a lot of deviation, so using the linear approach will get a decent approxiamation, but doesn't tell us anything on what a reseasonable upper bound may be for the new required database capacity). 
+At first it seems the linear approach might work, simply expect 50% more usage.  But, not all sites are as popular as others and some sites store 20K clicks for the last two weeks and others store only 1K (there is a lot of deviation, so using the linear approach will get a decent approxiamation, but doesn't tell us anything about what a reseasonable upper bound may be for the new required database capacity). 
 
 The Monte-Carlo method gives a good estimation on what the best, worst, and average cases might be, and can be used to create bell curves to visualize them all at once.
 
